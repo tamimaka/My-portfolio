@@ -1,0 +1,170 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* BODY */
+body {
+    background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
+    color: #333;
+    overflow-x: hidden;
+}
+
+
+
+@keyframes float {
+    0% {transform: translateY(100vh);}
+    100% {transform: translateY(-10vh);}
+}
+
+/* NAVBAR */
+nav {
+    background: #ffb6c1;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff1493;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero img {
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+.hero h1 {
+    margin: 15px 0;
+    color: #ff1493;
+    font-size: 2.5em;
+}
+
+.hero p {
+    margin: 10px 0;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff69b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff1493;
+    transform: scale(1.05);
+}
+
+/* CONTAINER */
+.container {
+    padding: 30px;
+}
+
+/* SKILLS */
+.skill {
+    margin: 15px 0;
+}
+
+.skill-bar {
+    background: #ffe4e1;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.skill-level {
+    height: 10px;
+    background: #ff69b4;
+    border-radius: 10px;
+}
+
+/* PROJECTS GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* CONTACT FORM */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ffc0cb;
+}
+
+button {
+    padding: 12px;
+    background: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff1493;
+}
+
+/* LINKS */
+a {
+    color: #ff69b4;
+}
+
+/* RESPONSIVE */
+@media(min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+}
